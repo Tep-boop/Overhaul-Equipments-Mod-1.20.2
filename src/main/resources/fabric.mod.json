@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "overhaulequipmentsmod",
+	"version": "${version}",
+	"name": "OverhaulEquipmentsMod",
+	"description": "A mod that adds extra stuff to do with the default ones",
+	"authors": [
+		"Tepb"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/overhaulequipmentsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tepb.overhaulequipments.OverhaulEquipmentsMod"
+		],
+		"client": [
+			"net.tepb.overhaulequipments.OverhaulEquipmentsModClient"
+		],
+		"fabric-datagen": [
+			"net.tepb.overhaulequipments.OverhaulEquipmentsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"overhaulequipmentsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
