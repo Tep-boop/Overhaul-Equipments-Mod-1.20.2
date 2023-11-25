@@ -1,7 +1,6 @@
 package net.tepb.overhaulequipments;
-
 import net.fabricmc.api.ModInitializer;
-
+import net.tepb.overhaulequipments.block.ModBlocks;
 import net.tepb.overhaulequipments.item.ModItemGroups;
 import net.tepb.overhaulequipments.item.ModItems;
 import org.slf4j.Logger;
@@ -19,8 +18,9 @@ public class OverhaulEquipmentsMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
-		LOGGER.info("Hello Fabric world! learning Java with modding");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		LOGGER.info("Hello Fabric world! learning Java modding Minecraft");
 	}
 }

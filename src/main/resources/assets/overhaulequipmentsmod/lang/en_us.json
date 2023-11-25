@@ -1,4 +1,17 @@
 {
   "item.overhaulequipmentsmod.raw_dest_iron": "Raw Dest Iron",
+  "item.overhaulequipmentsmod.spruce_stick": "Spruce Stick",
+  "item.overhaulequipmentsmod.birch_stick": "Birch Stick",
+  "item.overhaulequipmentsmod.jungle_stick": "Jungle Stick",
+  "item.overhaulequipmentsmod.acacia_stick": "Acacia Stick",
+  "item.overhaulequipmentsmod.dark_oak_stick": "Dark Oak Stick",
+  "item.overhaulequipmentsmod.mangrove_stick": "Mangrove Stick",
+  "item.overhaulequipmentsmod.cherry_stick": "Cherry Stick",
+  "item.overhaulequipmentsmod.bamboo_stick": "Bamboo Stick",
+  "item.overhaulequipmentsmod.crimson_stick": "Crimson Stick",
+  "item.overhaulequipmentsmod.warped_stick": "Warped Stick",
+
+  "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
+
   "itemgroup.dest": "Overhaul Equipments"
 }
