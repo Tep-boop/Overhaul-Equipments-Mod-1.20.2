@@ -1,13 +1,9 @@
 package net.tepb.overhaulequipments.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
-import net.minecraft.advancement.criterion.ItemDurabilityChangedCriterion;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.ItemTags;
-import net.tepb.overhaulequipments.OverhaulEquipmentsMod;
 
 import java.util.function.Supplier;
 
