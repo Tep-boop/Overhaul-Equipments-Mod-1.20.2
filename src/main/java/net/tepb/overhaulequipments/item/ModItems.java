@@ -4,12 +4,12 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 import net.minecraft.item.Item;
 import net.tepb.overhaulequipments.OverhaulEquipmentsMod;
-
 public class ModItems {
 
     public static final Item RAW_DEST_IRON = registerItem("raw_dest_iron", new Item(new FabricItemSettings()));
@@ -23,7 +23,13 @@ public class ModItems {
     public static final Item BAMBOO_STICK = registerItem("bamboo_stick", new Item (new FabricItemSettings()));
     public static final Item CRIMSON_STICK = registerItem("crimson_stick", new Item (new FabricItemSettings()));
     public static final Item WARPED_STICK = registerItem("warped_stick", new Item (new FabricItemSettings()));
-    
+
+    public static final Item GRANITE_SWORD = registerItem("granite_sword",
+            new SwordItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DIORITE_SWORD = registerItem("diorite_sword",
+            new SwordItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item ANDESITE_SWORD = registerItem("andesite_sword",
+            new SwordItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
     private static  void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_DEST_IRON);
         entries.add(SPRUCE_STICK);
@@ -36,6 +42,10 @@ public class ModItems {
         entries.add(BAMBOO_STICK);
         entries.add(CRIMSON_STICK);
         entries.add(WARPED_STICK);
+
+        entries.add(GRANITE_SWORD);
+        entries.add(DIORITE_SWORD);
+        entries.add(ANDESITE_SWORD);
     }
 
     private static Item registerItem(String name, Item item) {

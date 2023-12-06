@@ -11,6 +11,10 @@
   "item.overhaulequipmentsmod.crimson_stick": "Crimson Stick",
   "item.overhaulequipmentsmod.warped_stick": "Warped Stick",
 
+  "item.overhaulequipmentsmod.granite_sword": "Granite Sword",
+  "item.overhaulequipmentsmod.diorite_sword": "Diorite Sword",
+  "item.overhaulequipmentsmod.andesite_sword": "Andesite Sword",
+
   "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
 
   "itemgroup.dest": "Overhaul Equipments"

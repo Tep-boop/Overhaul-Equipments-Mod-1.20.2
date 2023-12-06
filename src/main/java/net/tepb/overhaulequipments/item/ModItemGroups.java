@@ -19,6 +19,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RAW_DEST_IRON)).entries((displayContext, entries) -> {
                        entries.add(ModItems.RAW_DEST_IRON);
                        entries.add(ModBlocks.RAW_DEST_IRON_BLOCK);
+
                        entries.add(ModItems.SPRUCE_STICK);
                        entries.add(ModItems.BIRCH_STICK);
                        entries.add(ModItems.JUNGLE_STICK);
@@ -30,7 +31,9 @@ public class ModItemGroups {
                        entries.add(ModItems.CRIMSON_STICK);
                        entries.add(ModItems.WARPED_STICK);
 
-                       entries.add(Items.RAW_IRON);
+                       entries.add(ModItems.GRANITE_SWORD);
+                       entries.add(ModItems.DIORITE_SWORD);
+                       entries.add(ModItems.ANDESITE_SWORD);
                     }).build());
     public static void registerItemGroups() {
         OverhaulEquipmentsMod.LOGGER.info("Registering Item Groups for " + OverhaulEquipmentsMod.MOD_ID);
