@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "overhaulequipmentsmod:raw_dest_iron_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "overhaulequipmentsmod:raw_dest_iron"
+  }
+}

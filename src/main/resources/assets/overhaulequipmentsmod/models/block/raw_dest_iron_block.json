@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "overhaulequipmentsmod:block/raw_dest_iron_block"
-  }
-}
