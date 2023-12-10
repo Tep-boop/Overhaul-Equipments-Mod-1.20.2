@@ -16,9 +16,12 @@ public class ModItemGroups {
             new Identifier(OverhaulEquipmentsMod.MOD_ID, "dest"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dest"))
                     .icon(() -> new ItemStack(ModItems.RAW_DEST_IRON)).entries((displayContext, entries) -> {
-                       entries.add(ModItems.RAW_DEST_IRON);
-                       entries.add(ModBlocks.RAW_DEST_IRON_BLOCK);
 
+                       entries.add(ModBlocks.RAW_DEST_IRON_BLOCK);
+                       entries.add(ModBlocks.DEST_IRON_ORE);
+                       entries.add(ModBlocks.RAW_CRAFTING_TABLE);
+
+                       entries.add(ModItems.RAW_DEST_IRON);
                        entries.add(ModItems.SPRUCE_STICK);
                        entries.add(ModItems.BIRCH_STICK);
                        entries.add(ModItems.JUNGLE_STICK);

@@ -1,7 +1,7 @@
 {
   "item.overhaulequipmentsmod.raw_dest_iron": "Raw Dest Iron",
   "item.overhaulequipmentsmod.spruce_stick": "Spruce Stick",
-  "item.overhaulequipmentsmod.birch_stick": "Birch Stick",
+  "item.overhaulequipmentsmod.birch_stickk": "Birch Stick",
   "item.overhaulequipmentsmod.jungle_stick": "Jungle Stick",
   "item.overhaulequipmentsmod.acacia_stick": "Acacia Stick",
   "item.overhaulequipmentsmod.dark_oak_stick": "Dark Oak Stick",
@@ -16,6 +16,9 @@
   "item.overhaulequipmentsmod.andesite_sword": "Andesite Sword",
 
   "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
+  "block.overhaulequipmentsmod.dest_iron_ore": "Dest Iron Ore",
+  "block.overhaulequipmentsmod.raw_crafting_table": "Raw Crafting Table",
+
 
   "itemgroup.dest": "Overhaul Equipments"
 }

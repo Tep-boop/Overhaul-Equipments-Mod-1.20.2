@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/oak_planks",
+    "east": "overhaulequipmentsmod:block/raw_crafting_table_side",
+    "north": "overhaulequipmentsmod:block/raw_crafting_table_side",
+    "particle": "overhaulequipmentsmod:block/raw_crafting_table_side",
+    "south": "overhaulequipmentsmod:block/raw_crafting_table_side",
+    "up": "overhaulequipmentsmod:block/raw_crafting_table_top",
+    "west": "overhaulequipmentsmod:block/raw_crafting_table_side"
+  }
+}

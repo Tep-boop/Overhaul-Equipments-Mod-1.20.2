@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "overhaulequipmentsmod:item/birch_stick"
+    "layer0": "overhaulequipmentsmod:item/birch_stickk"
   }
 }

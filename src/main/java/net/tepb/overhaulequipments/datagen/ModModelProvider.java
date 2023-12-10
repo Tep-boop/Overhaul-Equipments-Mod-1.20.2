@@ -2,12 +2,12 @@ package net.tepb.overhaulequipments.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.tepb.overhaulequipments.block.ModBlocks;
 import net.tepb.overhaulequipments.item.ModItems;
-
 public class ModModelProvider extends FabricModelProvider {
 
     public ModModelProvider(FabricDataOutput output) {
@@ -17,6 +17,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_DEST_IRON_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEST_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_CRAFTING_TABLE);
     }
 
     @Override

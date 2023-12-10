@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "overhaulequipmentsmod:raw_dest_iron_block"
+    "overhaulequipmentsmod:raw_dest_iron_block",
+    "overhaulequipmentsmod:dest_iron_ore"
   ]
 }

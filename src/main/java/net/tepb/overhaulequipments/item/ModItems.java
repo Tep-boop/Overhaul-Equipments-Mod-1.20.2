@@ -14,7 +14,7 @@ public class ModItems {
 
     public static final Item RAW_DEST_IRON = registerItem("raw_dest_iron", new Item(new FabricItemSettings()));
     public static final Item SPRUCE_STICK = registerItem("spruce_stick", new Item(new FabricItemSettings()));
-    public static final Item BIRCH_STICK = registerItem("birch_stick", new Item(new FabricItemSettings()));
+    public static final Item BIRCH_STICK = registerItem("birch_stickk", new Item(new FabricItemSettings()));
     public static final Item JUNGLE_STICK = registerItem("jungle_stick", new Item(new FabricItemSettings()));
     public static final Item ACACIA_STICK = registerItem("acacia_stick", new Item (new FabricItemSettings()));
     public static final Item DARK_OAK_STICK = registerItem("dark_oak_stick", new Item (new FabricItemSettings()));

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "overhaulequipmentsmod:block/dest_iron_ore"
+  }
+}
