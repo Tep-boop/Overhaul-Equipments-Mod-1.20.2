@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "overhaulequipmentsmod:raw_crafting_table"
+    },
+    "@": {
+      "item": "minecraft:leather"
+    },
+    "H": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "@@@",
+    "H#H"
+  ],
+  "result": {
+    "item": "minecraft:crafting_table"
+  },
+  "show_notification": true
+}

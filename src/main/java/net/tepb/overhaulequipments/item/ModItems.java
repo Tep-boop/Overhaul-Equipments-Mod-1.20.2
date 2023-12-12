@@ -3,12 +3,10 @@ package net.tepb.overhaulequipments.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.item.Item;
 import net.tepb.overhaulequipments.OverhaulEquipmentsMod;
 public class ModItems {
 
@@ -26,10 +24,16 @@ public class ModItems {
 
     public static final Item GRANITE_SWORD = registerItem("granite_sword",
             new SwordItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item GRANITE_AXE = registerItem("granite_axe",
+            new AxeItem(ModToolMaterial.GRANITE, 3,-2.4f, new FabricItemSettings()));
+    public static final Item GRANITE_PICKAXE = registerItem("granite_pickaxe",
+            new PickaxeItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item DIORITE_SWORD = registerItem("diorite_sword",
             new SwordItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item ANDESITE_SWORD = registerItem("andesite_sword",
             new SwordItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
+    public static final Item FLINT_KNIFE = registerItem("flint_knife",
+            new SwordItem(ModToolMaterial.FLINT, 0, -0.6f, new FabricItemSettings()));
     private static  void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_DEST_IRON);
         entries.add(SPRUCE_STICK);
@@ -44,8 +48,11 @@ public class ModItems {
         entries.add(WARPED_STICK);
 
         entries.add(GRANITE_SWORD);
+        entries.add(GRANITE_AXE);
+        entries.add(GRANITE_PICKAXE);
         entries.add(DIORITE_SWORD);
         entries.add(ANDESITE_SWORD);
+        entries.add(FLINT_KNIFE);
     }
 
     private static Item registerItem(String name, Item item) {

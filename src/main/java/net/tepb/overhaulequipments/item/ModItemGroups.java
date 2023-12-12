@@ -34,8 +34,11 @@ public class ModItemGroups {
                        entries.add(ModItems.WARPED_STICK);
 
                        entries.add(ModItems.GRANITE_SWORD);
+                       entries.add(ModItems.GRANITE_AXE);
+                       entries.add(ModItems.GRANITE_PICKAXE);
                        entries.add(ModItems.DIORITE_SWORD);
                        entries.add(ModItems.ANDESITE_SWORD);
+                       entries.add(ModItems.FLINT_KNIFE);
                     }).build());
     public static void registerItemGroups() {
         OverhaulEquipmentsMod.LOGGER.info("Registering Item Groups for " + OverhaulEquipmentsMod.MOD_ID);

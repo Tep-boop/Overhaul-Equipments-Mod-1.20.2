@@ -13,7 +13,9 @@ public enum ModToolMaterial implements ToolMaterial {
     DIORITE(MiningLevels.STONE, 137, 4.0f, 1.4f, 5,
             () -> Ingredient.ofItems(Items.DIORITE)),
     ANDESITE(MiningLevels.STONE, 151, 4.0f, 1.0f, 5,
-            () -> Ingredient.ofItems(Items.ANDESITE));
+            () -> Ingredient.ofItems(Items.ANDESITE)),
+    FLINT(0, 61, 1.0f, 0.7f, 5,
+    () -> Ingredient.ofItems(Items.FLINT));
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;
