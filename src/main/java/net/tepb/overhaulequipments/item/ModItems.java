@@ -28,10 +28,30 @@ public class ModItems {
             new AxeItem(ModToolMaterial.GRANITE, 3,-2.4f, new FabricItemSettings()));
     public static final Item GRANITE_PICKAXE = registerItem("granite_pickaxe",
             new PickaxeItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item GRANITE_SHOVEL = registerItem("granite_shovel",
+            new ShovelItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item GRANITE_HOE = registerItem("granite_hoe",
+            new HoeItem(ModToolMaterial.GRANITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item DIORITE_SWORD = registerItem("diorite_sword",
             new SwordItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DIORITE_AXE = registerItem("diorite_axe",
+            new AxeItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DIORITE_PICKAXE = registerItem("diorite_pickaxe",
+            new PickaxeItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DIORITE_SHOVEL = registerItem("diorite_shovel",
+            new ShovelItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DIORITE_HOE = registerItem("diorite_hoe",
+            new HoeItem(ModToolMaterial.DIORITE, 3, -2.4f, new FabricItemSettings()));
     public static final Item ANDESITE_SWORD = registerItem("andesite_sword",
             new SwordItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
+    public static final Item ANDESITE_AXE = registerItem("andesite_axe",
+            new AxeItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
+    public static final Item ANDESITE_PICKAXE = registerItem("andesite_pickaxe",
+            new PickaxeItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
+    public static final Item ANDESITE_SHOVEL = registerItem("andesite_shovel",
+            new ShovelItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
+    public static final Item ANDESITE_HOE = registerItem("andesite_hoe",
+            new HoeItem(ModToolMaterial.ANDESITE, 3, -3.1f, new FabricItemSettings()));
     public static final Item FLINT_KNIFE = registerItem("flint_knife",
             new SwordItem(ModToolMaterial.FLINT, 0, -0.6f, new FabricItemSettings()));
     private static  void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
@@ -50,8 +70,20 @@ public class ModItems {
         entries.add(GRANITE_SWORD);
         entries.add(GRANITE_AXE);
         entries.add(GRANITE_PICKAXE);
+        entries.add(GRANITE_SHOVEL);
+        entries.add(GRANITE_HOE);
         entries.add(DIORITE_SWORD);
+        entries.add(DIORITE_AXE);
+        entries.add(DIORITE_PICKAXE);
+        entries.add(DIORITE_SHOVEL);
+        entries.add(DIORITE_HOE);
         entries.add(ANDESITE_SWORD);
+        entries.add(ANDESITE_AXE);
+        entries.add(ANDESITE_PICKAXE);
+        entries.add(ANDESITE_SHOVEL);
+        entries.add(ANDESITE_HOE);
+
+
         entries.add(FLINT_KNIFE);
     }
 

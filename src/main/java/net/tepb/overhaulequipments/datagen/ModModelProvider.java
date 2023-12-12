@@ -25,8 +25,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GRANITE_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GRANITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.GRANITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRANITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GRANITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIORITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIORITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIORITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIORITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIORITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ANDESITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ANDESITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ANDESITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ANDESITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.ANDESITE_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.RAW_DEST_IRON, Models.GENERATED);

@@ -36,8 +36,18 @@ public class ModItemGroups {
                        entries.add(ModItems.GRANITE_SWORD);
                        entries.add(ModItems.GRANITE_AXE);
                        entries.add(ModItems.GRANITE_PICKAXE);
+                       entries.add(ModItems.GRANITE_SHOVEL);
+                       entries.add(ModItems.GRANITE_HOE);
                        entries.add(ModItems.DIORITE_SWORD);
+                        entries.add(ModItems.DIORITE_AXE);
+                        entries.add(ModItems.DIORITE_PICKAXE);
+                        entries.add(ModItems.DIORITE_SHOVEL);
+                        entries.add(ModItems.DIORITE_HOE);
                        entries.add(ModItems.ANDESITE_SWORD);
+                        entries.add(ModItems.ANDESITE_AXE);
+                        entries.add(ModItems.ANDESITE_PICKAXE);
+                        entries.add(ModItems.ANDESITE_SHOVEL);
+                        entries.add(ModItems.ANDESITE_HOE);
                        entries.add(ModItems.FLINT_KNIFE);
                     }).build());
     public static void registerItemGroups() {

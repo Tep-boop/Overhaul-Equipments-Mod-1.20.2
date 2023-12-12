@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-12T10:05:56.7200141	OverhaulEquipmentsMod/Tags for minecraft:block
+// 1.20.2	2023-12-13T21:18:31.3883011	OverhaulEquipmentsMod/Tags for minecraft:block
 06a07d27e994d37dc62a155ef87322c84bad4dd5 data\minecraft\tags\blocks\mineable\axe.json
-29c912bd05cf766969e7f4c2b59468e0fbef2a3e data\minecraft\tags\blocks\needs_stone_tool.json
 29c912bd05cf766969e7f4c2b59468e0fbef2a3e data\minecraft\tags\blocks\mineable\pickaxe.json
+29c912bd05cf766969e7f4c2b59468e0fbef2a3e data\minecraft\tags\blocks\needs_stone_tool.json
