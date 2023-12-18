@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "overhaulequipmentsmod:block/deepslate_furnace_front",
+    "side": "overhaulequipmentsmod:block/deepslate_furnace_side",
+    "top": "overhaulequipmentsmod:block/deepslate_furnace_top"
+  }
+}

@@ -30,7 +30,10 @@
 
   "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
   "block.overhaulequipmentsmod.dest_iron_ore": "Dest Iron Ore",
+  "block.overhaulequipmentsmod.deepslate_dest_iron_ore": "Deepslate Dest Iron Ore",
   "block.overhaulequipmentsmod.raw_crafting_table": "Raw Crafting Table",
+  "block.overhaulequipmentsmod.red_granite": "Red Granite",
+  "block.overhaulequipmentsmod.deepslate_furnace": "Deepslate Furnace",
 
 
   "itemgroup.dest": "Overhaul Equipments"

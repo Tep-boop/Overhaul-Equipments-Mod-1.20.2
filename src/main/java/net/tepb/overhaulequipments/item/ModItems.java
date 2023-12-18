@@ -10,17 +10,28 @@ import net.minecraft.util.Identifier;
 import net.tepb.overhaulequipments.OverhaulEquipmentsMod;
 public class ModItems {
 
-    public static final Item RAW_DEST_IRON = registerItem("raw_dest_iron", new Item(new FabricItemSettings()));
-    public static final Item SPRUCE_STICK = registerItem("spruce_stick", new Item(new FabricItemSettings()));
-    public static final Item BIRCH_STICK = registerItem("birch_stickk", new Item(new FabricItemSettings()));
-    public static final Item JUNGLE_STICK = registerItem("jungle_stick", new Item(new FabricItemSettings()));
-    public static final Item ACACIA_STICK = registerItem("acacia_stick", new Item (new FabricItemSettings()));
-    public static final Item DARK_OAK_STICK = registerItem("dark_oak_stick", new Item (new FabricItemSettings()));
-    public static final Item MANGROVE_STICK = registerItem("mangrove_stick", new Item (new FabricItemSettings()));
-    public static final Item CHERRY_STICK = registerItem("cherry_stick", new Item (new FabricItemSettings()));
-    public static final Item BAMBOO_STICK = registerItem("bamboo_stick", new Item (new FabricItemSettings()));
-    public static final Item CRIMSON_STICK = registerItem("crimson_stick", new Item (new FabricItemSettings()));
-    public static final Item WARPED_STICK = registerItem("warped_stick", new Item (new FabricItemSettings()));
+    public static final Item RAW_DEST_IRON = registerItem("raw_dest_iron",
+            new Item(new FabricItemSettings()));
+    public static final Item SPRUCE_STICK = registerItem("spruce_stick",
+            new Item(new FabricItemSettings()));
+    public static final Item BIRCH_STICK = registerItem("birch_stickk",
+            new Item(new FabricItemSettings()));
+    public static final Item JUNGLE_STICK = registerItem("jungle_stick",
+            new Item(new FabricItemSettings()));
+    public static final Item ACACIA_STICK = registerItem("acacia_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item DARK_OAK_STICK = registerItem("dark_oak_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item MANGROVE_STICK = registerItem("mangrove_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item CHERRY_STICK = registerItem("cherry_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item BAMBOO_STICK = registerItem("bamboo_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item CRIMSON_STICK = registerItem("crimson_stick",
+            new Item (new FabricItemSettings()));
+    public static final Item WARPED_STICK = registerItem("warped_stick",
+            new Item (new FabricItemSettings()));
 
     public static final Item GRANITE_SWORD = registerItem("granite_sword",
             new SwordItem(ModToolMaterial.GRANITE_SWORD_MATERIAL,3, -2.4f, new FabricItemSettings()));
@@ -54,7 +65,8 @@ public class ModItems {
             new HoeItem(ModToolMaterial.ANDESITE_HOE_MATERIAL, 3, -2.4f, new FabricItemSettings()));
     public static final Item FLINT_KNIFE = registerItem("flint_knife",
             new SwordItem(ModToolMaterial.FLINT, 0, -0.6f, new FabricItemSettings()));
-    private static  void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
+
+    private static void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_DEST_IRON);
         entries.add(SPRUCE_STICK);
         entries.add(BIRCH_STICK);
@@ -66,24 +78,29 @@ public class ModItems {
         entries.add(BAMBOO_STICK);
         entries.add(CRIMSON_STICK);
         entries.add(WARPED_STICK);
-
+    }
+    private static void addItemToCombatTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(GRANITE_SWORD);
+        entries.add(GRANITE_AXE);
+        entries.add(DIORITE_SWORD);
+        entries.add(DIORITE_AXE);
+        entries.add(ANDESITE_SWORD);
+        entries.add(ANDESITE_AXE);
+        entries.add(FLINT_KNIFE);
+    }
+    private static void addItemToToolsItemGroup(FabricItemGroupEntries entries) {
         entries.add(GRANITE_AXE);
         entries.add(GRANITE_PICKAXE);
         entries.add(GRANITE_SHOVEL);
         entries.add(GRANITE_HOE);
-        entries.add(DIORITE_SWORD);
         entries.add(DIORITE_AXE);
         entries.add(DIORITE_PICKAXE);
         entries.add(DIORITE_SHOVEL);
         entries.add(DIORITE_HOE);
-        entries.add(ANDESITE_SWORD);
         entries.add(ANDESITE_AXE);
         entries.add(ANDESITE_PICKAXE);
         entries.add(ANDESITE_SHOVEL);
         entries.add(ANDESITE_HOE);
-
-
         entries.add(FLINT_KNIFE);
     }
 
@@ -95,5 +112,7 @@ public class ModItems {
         OverhaulEquipmentsMod.LOGGER.info("Registering Mod Items for " + OverhaulEquipmentsMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemToCombatTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemToToolsItemGroup);
     }
 }

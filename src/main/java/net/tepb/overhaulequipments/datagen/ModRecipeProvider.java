@@ -46,6 +46,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(ModBlocks.RAW_CRAFTING_TABLE), conditionsFromItem(ModBlocks.RAW_CRAFTING_TABLE))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(Items.CRAFTING_TABLE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DEEPSLATE_FURNACE, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("###")
+                .input('#', Items.COBBLED_DEEPSLATE)
+                .criterion(hasItem(Items.COBBLED_DEEPSLATE), conditionsFromItem(Items.COBBLED_DEEPSLATE))
+                .offerTo(exporter, new Identifier("deepslate_furnace"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.GRANITE_SWORD, 1)
                 .pattern("#")

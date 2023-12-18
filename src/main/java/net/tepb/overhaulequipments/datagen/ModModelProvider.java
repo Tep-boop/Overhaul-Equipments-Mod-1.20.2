@@ -17,7 +17,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_DEST_IRON_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEST_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DEST_IRON_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_CRAFTING_TABLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_GRANITE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURNACE);
+
     }
 
     @Override

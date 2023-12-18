@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "overhaulequipmentsmod:raw_dest_iron_block",
-    "overhaulequipmentsmod:dest_iron_ore"
+    "overhaulequipmentsmod:dest_iron_ore",
+    "overhaulequipmentsmod:deepslate_dest_iron_ore",
+    "overhaulequipmentsmod:red_granite",
+    "overhaulequipmentsmod:deepslate_furnace"
   ]
 }

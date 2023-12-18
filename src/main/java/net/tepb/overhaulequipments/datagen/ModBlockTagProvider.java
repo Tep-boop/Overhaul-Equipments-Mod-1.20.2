@@ -20,10 +20,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RAW_DEST_IRON_BLOCK)
-                .add(ModBlocks.DEST_IRON_ORE);
+                .add(ModBlocks.DEST_IRON_ORE)
+                .add(ModBlocks.DEEPSLATE_DEST_IRON_ORE)
+                .add(ModBlocks.RED_GRANITE)
+                .add(ModBlocks.DEEPSLATE_FURNACE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RAW_DEST_IRON_BLOCK)
-                .add(ModBlocks.DEST_IRON_ORE);
+                .add(ModBlocks.DEST_IRON_ORE)
+                .add(ModBlocks.DEEPSLATE_DEST_IRON_ORE);
     }
 }
