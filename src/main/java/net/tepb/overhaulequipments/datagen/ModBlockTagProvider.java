@@ -19,9 +19,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_CRAFTING_TABLE);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RAW_DEST_IRON_BLOCK)
                 .add(ModBlocks.DEST_IRON_ORE)
                 .add(ModBlocks.DEEPSLATE_DEST_IRON_ORE)
+                .add(ModBlocks.RAW_DEST_IRON_BLOCK)
+                .add(ModBlocks.DEST_IRON_BLOCK)
                 .add(ModBlocks.RED_GRANITE)
                 .add(ModBlocks.DEEPSLATE_FURNACE);
 
@@ -29,5 +30,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_DEST_IRON_BLOCK)
                 .add(ModBlocks.DEST_IRON_ORE)
                 .add(ModBlocks.DEEPSLATE_DEST_IRON_ORE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.DEST_IRON_BLOCK);
     }
 }

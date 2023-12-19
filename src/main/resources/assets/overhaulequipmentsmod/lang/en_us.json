@@ -1,5 +1,7 @@
 {
   "item.overhaulequipmentsmod.raw_dest_iron": "Raw Dest Iron",
+  "item.overhaulequipmentsmod.dest_iron_ingot": "Dest Iron Ingot",
+  "item.overhaulequipmentsmod.dest_iron_nugget": "Dest Iron Nugget",
   "item.overhaulequipmentsmod.spruce_stick": "Spruce Stick",
   "item.overhaulequipmentsmod.birch_stickk": "Birch Stick",
   "item.overhaulequipmentsmod.jungle_stick": "Jungle Stick",
@@ -31,10 +33,11 @@
   "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
   "block.overhaulequipmentsmod.dest_iron_ore": "Dest Iron Ore",
   "block.overhaulequipmentsmod.deepslate_dest_iron_ore": "Deepslate Dest Iron Ore",
+  "block.overhaulequipmentsmod.dest_iron_block": "Dest Iron Block",
   "block.overhaulequipmentsmod.raw_crafting_table": "Raw Crafting Table",
-  "block.overhaulequipmentsmod.red_granite": "Red Granite",
   "block.overhaulequipmentsmod.deepslate_furnace": "Deepslate Furnace",
+  "block.overhaulequipmentsmod.red_granite": "Red Granite",
 
 
-  "itemgroup.dest": "Overhaul Equipments"
+  "itemgroup.dest": "Overhaul Equipments Mod"
 }

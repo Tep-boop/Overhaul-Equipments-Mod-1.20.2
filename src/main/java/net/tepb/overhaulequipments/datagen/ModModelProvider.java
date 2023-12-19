@@ -15,9 +15,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_DEST_IRON_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEST_IRON_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DEST_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_DEST_IRON_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEST_IRON_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_CRAFTING_TABLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_GRANITE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FURNACE);
@@ -44,6 +45,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.RAW_DEST_IRON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEST_IRON_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEST_IRON_NUGGET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ACACIA_STICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAMBOO_STICK, Models.GENERATED);

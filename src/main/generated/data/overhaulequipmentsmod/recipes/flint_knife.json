@@ -13,7 +13,8 @@
     }
   },
   "pattern": [
-    "#S/"
+    " #",
+    "S/"
   ],
   "result": {
     "item": "overhaulequipmentsmod:flint_knife"

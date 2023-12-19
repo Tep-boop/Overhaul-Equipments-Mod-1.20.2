@@ -22,6 +22,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC,
                 ModItems.RAW_DEST_IRON, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_DEST_IRON_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC,
+                ModItems.DEST_IRON_NUGGET, RecipeCategory.MISC, ModItems.DEST_IRON_INGOT);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_DEST_IRON_BLOCK, 1)
                 .pattern("###")
@@ -30,6 +32,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModItems.RAW_DEST_IRON)
                 .criterion(hasItem(ModItems.RAW_DEST_IRON), conditionsFromItem(ModItems.RAW_DEST_IRON))
                 .offerTo(exporter, new Identifier("block_of_raw_dest_iron"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DEST_IRON_BLOCK, 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .offerTo(exporter, new Identifier("dest_iron_block"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_CRAFTING_TABLE, 1)
                 .pattern("##")
                 .pattern("##")
@@ -191,7 +200,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.ANDESITE_HOE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_KNIFE, 1)
-                .pattern("#S/")
+                .pattern(" #")
+                .pattern("S/")
                 .input('#', Items.FLINT)
                 .input('S', Items.STRING)
                 .input('/', Items.STICK)
@@ -266,5 +276,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.WARPED_PLANKS)
                 .criterion(hasItem(Items.WARPED_PLANKS), conditionsFromItem(Items.WARPED_PLANKS))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.WARPED_STICK)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEST_IRON_INGOT, 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.DEST_IRON_NUGGET)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_NUGGET))
+                .offerTo(exporter, new Identifier("dest_iron_ingot_from_dest_iron_nugget"));
     }
 }

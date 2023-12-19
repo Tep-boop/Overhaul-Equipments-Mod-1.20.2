@@ -17,14 +17,17 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.dest"))
                     .icon(() -> new ItemStack(ModItems.RAW_DEST_IRON)).entries((displayContext, entries) -> {
 
-                       entries.add(ModBlocks.RAW_DEST_IRON_BLOCK);
                        entries.add(ModBlocks.DEST_IRON_ORE);
                        entries.add(ModBlocks.DEEPSLATE_DEST_IRON_ORE);
+                       entries.add(ModBlocks.RAW_DEST_IRON_BLOCK);
+                       entries.add(ModBlocks.DEST_IRON_BLOCK);
                        entries.add(ModBlocks.RAW_CRAFTING_TABLE);
                        entries.add(ModBlocks.RED_GRANITE);
                        entries.add(ModBlocks.DEEPSLATE_FURNACE);
 
                        entries.add(ModItems.RAW_DEST_IRON);
+                       entries.add(ModItems.DEST_IRON_INGOT);
+                       entries.add(ModItems.DEST_IRON_NUGGET);
                        entries.add(ModItems.SPRUCE_STICK);
                        entries.add(ModItems.BIRCH_STICK);
                        entries.add(ModItems.JUNGLE_STICK);

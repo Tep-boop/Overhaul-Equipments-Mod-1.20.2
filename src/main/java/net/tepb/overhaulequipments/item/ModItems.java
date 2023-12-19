@@ -12,6 +12,10 @@ public class ModItems {
 
     public static final Item RAW_DEST_IRON = registerItem("raw_dest_iron",
             new Item(new FabricItemSettings()));
+    public static final Item DEST_IRON_INGOT = registerItem("dest_iron_ingot",
+            new Item(new FabricItemSettings()));
+    public static final Item DEST_IRON_NUGGET = registerItem("dest_iron_nugget",
+            new Item(new FabricItemSettings()));
     public static final Item SPRUCE_STICK = registerItem("spruce_stick",
             new Item(new FabricItemSettings()));
     public static final Item BIRCH_STICK = registerItem("birch_stickk",
@@ -68,6 +72,8 @@ public class ModItems {
 
     private static void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_DEST_IRON);
+        entries.add(DEST_IRON_INGOT);
+        entries.add(DEST_IRON_NUGGET);
         entries.add(SPRUCE_STICK);
         entries.add(BIRCH_STICK);
         entries.add(JUNGLE_STICK);

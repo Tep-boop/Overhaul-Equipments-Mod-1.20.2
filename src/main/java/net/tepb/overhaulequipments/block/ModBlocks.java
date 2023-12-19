@@ -18,18 +18,20 @@ import net.tepb.overhaulequipments.OverhaulEquipmentsMod;
 
 public class ModBlocks {
 
-    public static final Block RAW_DEST_IRON_BLOCK = registerBlock("raw_dest_iron_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)));
     public static final Block DEST_IRON_ORE = registerBlock("dest_iron_ore",
             new Block(FabricBlockSettings.copy(Blocks.IRON_ORE)));
     public static final Block DEEPSLATE_DEST_IRON_ORE = registerBlock("deepslate_dest_iron_ore",
             new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final Block RAW_DEST_IRON_BLOCK = registerBlock("raw_dest_iron_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK)));
     public static final Block RAW_CRAFTING_TABLE = registerBlock("raw_crafting_table",
             new CraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)));
     public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace",
             new FurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE).sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block RED_GRANITE = registerBlock("red_granite",
             new Block(FabricBlockSettings.copyOf(Blocks.GRANITE)));
+    public static final Block DEST_IRON_BLOCK = registerBlock("dest_iron_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static void addBlockToNaturalItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.DEST_IRON_ORE);
@@ -39,6 +41,7 @@ public class ModBlocks {
     }
     private static void addBlockToBuildingItemGroup(FabricItemGroupEntries entries) {
         entries.add(RED_GRANITE);
+        entries.add(DEST_IRON_BLOCK);
     }
     private static void addBlockToFunctionalItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.RAW_CRAFTING_TABLE);
