@@ -198,6 +198,51 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ANDESITE), conditionsFromItem(Items.ANDESITE))
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.ANDESITE_HOE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEST_IRON_SWORD, 1)
+                .pattern("#")
+                .pattern("#")
+                .pattern("/")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.DEST_IRON_SWORD)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEST_IRON_AXE, 1)
+                .pattern("## ")
+                .pattern("#/ ")
+                .pattern(" / ")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.DEST_IRON_AXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEST_IRON_PICKAXE, 1)
+                .pattern("###")
+                .pattern(" / ")
+                .pattern(" / ")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.DEST_IRON_PICKAXE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEST_IRON_SHOVEL, 1)
+                .pattern("#")
+                .pattern("/")
+                .pattern("/")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.DEST_IRON_SHOVEL)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DEST_IRON_HOE, 1)
+                .pattern("##")
+                .pattern(" /")
+                .pattern(" /")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.DEST_IRON_HOE)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.FLINT_KNIFE, 1)
                 .pattern(" #")
@@ -283,5 +328,32 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', ModItems.DEST_IRON_NUGGET)
                 .criterion(hasItem(ModItems.DEST_IRON_INGOT), conditionsFromItem(ModItems.DEST_IRON_NUGGET))
                 .offerTo(exporter, new Identifier("dest_iron_ingot_from_dest_iron_nugget"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DEST_IRON_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .criterion(hasItem(ModItems.DEST_IRON_HELMET), conditionsFromItem(ModItems.DEST_IRON_HELMET))
+                .offerTo(exporter, new Identifier("dest_iron_helmet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DEST_IRON_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .criterion(hasItem(ModItems.DEST_IRON_CHESTPLATE), conditionsFromItem(ModItems.DEST_IRON_CHESTPLATE))
+                .offerTo(exporter, new Identifier("dest_iron_chetplate"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DEST_IRON_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .criterion(hasItem(ModItems.DEST_IRON_LEGGINGS), conditionsFromItem(ModItems.DEST_IRON_LEGGINGS))
+                .offerTo(exporter, new Identifier("dest_iron_leggings"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DEST_IRON_BOOTS, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.DEST_IRON_INGOT)
+                .criterion(hasItem(ModItems.DEST_IRON_BOOTS), conditionsFromItem(ModItems.DEST_IRON_BOOTS))
+                .offerTo(exporter, new Identifier("dest_iron_boots"));
     }
 }

@@ -67,8 +67,27 @@ public class ModItems {
             new ShovelItem(ModToolMaterial.ANDESITE_SHOVEL_MATERIAL, 3, -3.3f, new FabricItemSettings()));
     public static final Item ANDESITE_HOE = registerItem("andesite_hoe",
             new HoeItem(ModToolMaterial.ANDESITE_HOE_MATERIAL, 3, -2.4f, new FabricItemSettings()));
+    public static final Item DEST_IRON_SWORD = registerItem("dest_iron_sword",
+            new SwordItem(ModToolMaterial.DEST_IRON_SWORD_MATERIAL, 3, -2.2f, new FabricItemSettings()));
+    public static final Item DEST_IRON_AXE = registerItem("dest_iron_axe",
+            new AxeItem(ModToolMaterial.DEST_IRON_AXE_MATERIAL, 3, -2.1f, new FabricItemSettings()));
+    public static final Item DEST_IRON_PICKAXE = registerItem("dest_iron_pickaxe",
+            new PickaxeItem(ModToolMaterial.DEST_IRON_PICKAXE_MATERIAL, 3, -2.5f, new FabricItemSettings()));
+    public static final Item DEST_IRON_SHOVEL = registerItem("dest_iron_shovel",
+            new ShovelItem(ModToolMaterial.DEST_IRON_SHOVEL_MATERIAL, 3, -2.6f, new FabricItemSettings()));
+    public static final Item DEST_IRON_HOE = registerItem("dest_iron_hoe",
+            new HoeItem(ModToolMaterial.DEST_IRON_HOE_MATERIAL, 3, -0.4f, new FabricItemSettings()));
     public static final Item FLINT_KNIFE = registerItem("flint_knife",
             new SwordItem(ModToolMaterial.FLINT, 0, -0.6f, new FabricItemSettings()));
+
+    public static final Item DEST_IRON_HELMET = registerItem("dest_iron_helmet",
+            new ArmorItem(ModArmorMaterial.DEST_IRON, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item DEST_IRON_CHESTPLATE = registerItem("dest_iron_chestplate",
+            new ArmorItem(ModArmorMaterial.DEST_IRON, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item DEST_IRON_LEGGINGS = registerItem("dest_iron_leggings",
+            new ArmorItem(ModArmorMaterial.DEST_IRON, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item DEST_IRON_BOOTS = registerItem("dest_iron_boots",
+            new ArmorItem(ModArmorMaterial.DEST_IRON, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     private static void addItemToIngredientTabItemGroup(FabricItemGroupEntries entries) {
         entries.add(RAW_DEST_IRON);
@@ -92,7 +111,13 @@ public class ModItems {
         entries.add(DIORITE_AXE);
         entries.add(ANDESITE_SWORD);
         entries.add(ANDESITE_AXE);
+        entries.add(DEST_IRON_SWORD);
+        entries.add(DEST_IRON_AXE);
         entries.add(FLINT_KNIFE);
+        entries.add(DEST_IRON_HELMET);
+        entries.add(DEST_IRON_CHESTPLATE);
+        entries.add(DEST_IRON_LEGGINGS);
+        entries.add(DEST_IRON_BOOTS);
     }
     private static void addItemToToolsItemGroup(FabricItemGroupEntries entries) {
         entries.add(GRANITE_AXE);
@@ -107,6 +132,10 @@ public class ModItems {
         entries.add(ANDESITE_PICKAXE);
         entries.add(ANDESITE_SHOVEL);
         entries.add(ANDESITE_HOE);
+        entries.add(DEST_IRON_AXE);
+        entries.add(DEST_IRON_PICKAXE);
+        entries.add(DEST_IRON_SHOVEL);
+        entries.add(DEST_IRON_HOE);
         entries.add(FLINT_KNIFE);
     }
 

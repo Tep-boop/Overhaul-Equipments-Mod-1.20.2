@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.tepb.overhaulequipments.block.ModBlocks;
 import net.tepb.overhaulequipments.item.ModItems;
 public class ModModelProvider extends FabricModelProvider {
@@ -42,7 +43,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ANDESITE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ANDESITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ANDESITE_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEST_IRON_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEST_IRON_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEST_IRON_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEST_IRON_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DEST_IRON_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.FLINT_KNIFE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DEST_IRON_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DEST_IRON_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DEST_IRON_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DEST_IRON_BOOTS);
+
 
         itemModelGenerator.register(ModItems.RAW_DEST_IRON, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEST_IRON_INGOT, Models.GENERATED);

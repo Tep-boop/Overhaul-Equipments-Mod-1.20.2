@@ -39,6 +39,16 @@ public enum ModToolMaterial implements ToolMaterial {
             () -> Ingredient.ofItems(Items.ANDESITE)),
     ANDESITE_HOE_MATERIAL(MiningLevels.STONE, 151, 4.0f, -3.0f, 5,
             () -> Ingredient.ofItems(Items.ANDESITE)),
+    DEST_IRON_SWORD_MATERIAL(2, 200, 4.0f, 1.8f, 14,
+            () -> Ingredient.ofItems(ModItems.DEST_IRON_INGOT)),
+    DEST_IRON_AXE_MATERIAL(2, 200, 4.0f, 4.7f, 14,
+            () -> Ingredient.ofItems(ModItems.DEST_IRON_INGOT)),
+    DEST_IRON_PICKAXE_MATERIAL(2, 200, 4.0f, -0.6f, 14,
+            () -> Ingredient.ofItems(ModItems.DEST_IRON_INGOT)),
+    DEST_IRON_SHOVEL_MATERIAL(2, 200, 4.0f, 0.2f, 14,
+            () -> Ingredient.ofItems(ModItems.DEST_IRON_INGOT)),
+    DEST_IRON_HOE_MATERIAL(2, 200, 4.0f, -0.4f, 14,
+            () -> Ingredient.ofItems(ModItems.DEST_IRON_INGOT)),
     FLINT(0, 61, 1.0f, 0.7f, 5,
     () -> Ingredient.ofItems(Items.FLINT));
     private final int miningLevel;

@@ -29,6 +29,16 @@
   "item.overhaulequipmentsmod.andesite_shovel": "Andesite Shovel",
   "item.overhaulequipmentsmod.andesite_hoe": "Andesite Hoe",
   "item.overhaulequipmentsmod.flint_knife": "Flint Knife",
+  "item.overhaulequipmentsmod.dest_iron_sword": "Dest Iron Sword",
+  "item.overhaulequipmentsmod.dest_iron_axe": "Dest Iron Axe",
+  "item.overhaulequipmentsmod.dest_iron_pickaxe": "Dest Iron Pickaxe",
+  "item.overhaulequipmentsmod.dest_iron_shovel": "Dest Iron Shovel",
+  "item.overhaulequipmentsmod.dest_iron_hoe": "Dest Iron Hoe",
+
+  "item.overhaulequipmentsmod.dest_iron_helmet": "Dest Iron Helmet",
+  "item.overhaulequipmentsmod.dest_iron_chestplate": "Dest Iron Chestplate",
+  "item.overhaulequipmentsmod.dest_iron_leggings": "Dest Iron Leggings",
+  "item.overhaulequipmentsmod.dest_iron_boots": "Dest Iron Boots",
 
   "block.overhaulequipmentsmod.raw_dest_iron_block": "Block of Raw Dest Iron",
   "block.overhaulequipmentsmod.dest_iron_ore": "Dest Iron Ore",
