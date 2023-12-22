@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "overhaulequipmentsmod:dest_iron_helmet",
+    "overhaulequipmentsmod:dest_iron_chestplate",
+    "overhaulequipmentsmod:dest_iron_leggings",
+    "overhaulequipmentsmod:dest_iron_boots"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "overhaulequipmentsmod:dest_iron_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#/ ",
+    " / "
+  ],
+  "result": {
+    "item": "overhaulequipmentsmod:dest_iron_axe"
+  },
+  "show_notification": true
+}

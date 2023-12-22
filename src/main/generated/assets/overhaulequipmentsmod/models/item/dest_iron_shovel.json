@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "overhaulequipmentsmod:item/dest_iron_shovel"
+  }
+}
